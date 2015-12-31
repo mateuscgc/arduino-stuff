@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Potentiometer with 7 segments display and LEDs</title>
+    </head>
+    <body>
+        <h2>Potentiometer with 7 Segment display and LEDs</h2>
+        <p>Funtions for display number in 7 Segment LED  -> By: Riley Porter</p>
+
+        <img src="schema.jpg" height="1518" width="1833" alt="Schema">
+        <p id="code"></p>
+
+        <script>
+            (function() {
+                console.log("sdfdsfds");
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    document.getElementById("code").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "schema.jpg", true);
+                xhttp.send();
+            })();
+        </script>
+    </body>
+</html>
